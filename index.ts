@@ -149,8 +149,8 @@ class EmployeeOrgApp implements IEmployeeOrgApp {
         this.undoStack.push([employeeID, supervisorID]);
         let employeeIndex = this.recursion(this.ceo, employeeID, [])
         let supervisorIndex = this.recursion(this.ceo, supervisorID, [])
-        console.log(`Emplyee Index Location in tree- ${employeeIndex}`)
-        console.log(`Supervisor Index Location in tree- ${supervisorIndex}`)
+        console.log(`Emplyee Index Location in tree - ${employeeIndex}`)
+        console.log(`Supervisor Index Location in tree - ${supervisorIndex}`)
     }
     undo(): void {
         if(this.undoStack.length) { // if any undo element in stack
